@@ -23,7 +23,7 @@ body{
 #half-square-triangle {
     width: 0;
     height: 0;
-    border-right: 50rem solid transparent;   
+    border-right: 50rem solid transparent;    
     border-bottom: 35rem solid #4CAF50;
     z-index: 1000;
   }
@@ -31,7 +31,7 @@ body{
 #half-square-triangle2{
     width: 0;
     height: 0;
-    border-left: 50rem solid transparent;   
+    border-left: 50rem solid transparent;
     border-bottom: 35rem solid #4CAF50;
     z-index: 1000;
 }
@@ -49,9 +49,9 @@ body{
     width: 49.7rem;
     transition: 3s all ;
     animation:up 3s linear forwards;
-    animation-delay: 0.8s;
+    /* animation-delay: 0.8s; */
      position: absolute;
-     z-index: 1000;
+     bottom: 0rem;
 }
 
 .triangle{
@@ -152,7 +152,7 @@ body{
 
  @keyframes up{
     0%{
-        bottom:25rem;
+        bottom:20rem;
     }
     100%{
         bottom: 36.9rem;
@@ -210,8 +210,8 @@ body{
            scale:0.7;
            margin-bottom: 10rem;
      }
-
-     @keyframes resize{
+ 
+      @keyframes resize{
         0%{
           scale:0.7
         }
@@ -223,12 +223,12 @@ body{
 
       @keyframes up{
         0%{
-            bottom:10rem;
+            bottom:0rem;
         }
         100%{
             bottom: 13rem;
         }
-    }
+    } 
 
     #copyLinkBtn{
         position: absolute;
@@ -248,7 +248,7 @@ body{
     }
 }
 
-@media(max-width:398px){
+ @media(max-width:398px){
     html{
         font-size: 43%;
     }
@@ -257,9 +257,9 @@ body{
         position: absolute;
         bottom: 87rem;
     }
-}
+} 
 
-@media(min-height:731px){
+  /* @media(min-height:731px){
     @keyframes up{
         0%{
             bottom:25rem;
@@ -268,9 +268,10 @@ body{
             bottom: 36.9rem;
         }
     }
-}
-/* 
-@media(min-height:925px){
+} 
+
+
+@media(min-height:925px)and(){
     @keyframes up{
         0%{
             bottom:45rem;
@@ -281,13 +282,4 @@ body{
     }
 }
 
-@media(min-height:1080px){
-    @keyframes up{
-        0%{
-            bottom:56rem;
-        }
-        100%{
-            bottom: 72rem;
-        }
-    }
-} */
+ */
