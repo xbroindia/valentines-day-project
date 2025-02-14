@@ -191,7 +191,7 @@ body{
 
 
 
-@media(max-width:998px){
+@media(max-width:1024px){
 
     .main{
           grid-template-columns: 1fr;
@@ -208,7 +208,7 @@ body{
            grid-column-start: 1;
            grid-row-start: 1;
            scale:0.7;
-           margin-bottom: 10rem;
+           margin-bottom: 8rem;
      }
  
       @keyframes resize{
@@ -258,6 +258,29 @@ body{
         bottom: 75rem;
     }
 } 
+
+@media(max-height:667px){
+
+    #copyLinkBtn{
+        position: absolute;
+        bottom: 40rem;
+    }
+}
+
+@media(max-height:740px){
+     #copyLinkBtn{
+        position: absolute;
+        bottom: 60rem;
+     }
+}
+
+
+@media(max-height:600px){
+    #copyLinkBtn{
+       position: absolute;
+       bottom: 10rem;
+    }
+}
 
   /* @media(min-height:731px){
     @keyframes up{
