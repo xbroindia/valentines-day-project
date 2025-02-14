@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="shah hamdan">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="main">
+        <form method="get" id="form">
+            <div class="content">
+           <label for="sender-name">Enter your Name </label>
+           <input type="text" name="sender_name" placeholder="Enter Name" class="inp1" required >
+        </div>
+        <div class="content">
+           <label for="receiver-name">Enter your Favourite person name </label>
+           <input type="text" name="reciver_name" placeholder="Enter Receiver Name" class="inp1" required >
+        </div>
+
+        <!-- <div class="content-radio">
+           <label for="male">male</label>
+            <input type="radio" name="gender" value="male" class="radio" required >
+            <label for="female">female</label>
+            <input type="radio" name="gender" value="female" class="radio" required >
+         </div> -->
+
+        <div>
+           <label for="person-img" >upload receiver image</label>
+           <input type="file" name="person_img" id="person-img" required>
+        </div>
+           <input type="submit" value="submit"  id="btn1">
+        </form>
+        <div class="container">
+         <div class="content1">
+            <img src="./assests/images/picture1.png">
+         </div>
+         <div class="content2">
+         <img src="./assests/images/picture2.png">
+         </div>
+        </div>
+</div>
+
+<script type="text/javascript" src="./data.js"></script>
+</body>
+</html>
