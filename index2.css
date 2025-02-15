@@ -17,6 +17,9 @@ body{
      overflow: hidden;
      grid-column-start: 1;
      grid-row-start: span 2 ;
+     overflow: hidden;
+     position: relative;
+     bottom: 2rem;
 }
 
 
@@ -25,7 +28,7 @@ body{
     height: 0;
     border-right: 50rem solid transparent;    
     border-bottom: 35rem solid #4CAF50;
-    z-index: 1000;
+  
   }
   
 #half-square-triangle2{
@@ -33,14 +36,14 @@ body{
     height: 0;
     border-left: 50rem solid transparent;
     border-bottom: 35rem solid #4CAF50;
-    z-index: 1000;
+   
 }
 
 #full-triangle{
   border-left: 25rem solid transparent;   
   border-right: 25rem solid transparent;  
   border-bottom: 20rem solid #4CAF50; 
-  z-index: -1;
+
 }
 
 #letter{
@@ -61,9 +64,12 @@ body{
 
 .main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     place-items: center;
+    background:linear-gradient(rgb(250, 218, 223),rgb(250, 205, 212),pink);
+    min-height: 100vh;
+    width: 100%;
 }
 
 .letter-content{
@@ -102,6 +108,7 @@ body{
     background-color: rgb(255, 0, 0);
     transform: rotate(45deg);
     grid-row-start: span 2;
+    grid-column-start: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,10 +159,10 @@ body{
 
  @keyframes up{
     0%{
-        bottom:20rem;
+        bottom:0rem;
     }
     100%{
-        bottom: 36.9rem;
+        bottom: 13.9rem;
     }
 }
 
@@ -192,32 +199,36 @@ body{
 
 
 @media(max-width:1024px){
-
+      
+  
     .main{
-          grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
      .envelope{
-           grid-template-columns: 1fr;
-           grid-template-rows: auto auto;
-           scale: 0.7;
+           scale: 1;
            position: relative;
+           grid-row-start: 3;
            bottom: 0rem;
      }
      .heart{
            grid-column-start: 1;
            grid-row-start: 1;
-           scale:0.7;
+           scale:1;
            margin-bottom: 8rem;
+     }
+     #copyLinkBtn{
+        grid-column-start: 1;
+        grid-row-start: 2;
      }
  
       @keyframes resize{
         0%{
-          scale:0.7
+          scale:1
         }
   
         50%{
-          scale:0.5
+          scale:0.7
         }
   } 
 
@@ -230,79 +241,38 @@ body{
         }
     } 
 
-    #copyLinkBtn{
-        position: absolute;
-        bottom: 35rem;
-    }
    
 }
 
-@media(max-width:468px){
+@media(max-width:598px){
     html{
         font-size: 50%;
     }
 
-    #copyLinkBtn{
-        position: absolute;
-        bottom: 60rem;
-    }
+ 
 }
 
- @media(max-width:398px){
+ @media(max-width:498px){
     html{
-        font-size: 43%;
-    }
-
-    #copyLinkBtn{
-        position: absolute;
-        bottom: 75rem;
+        font-size: 40%;
     }
 } 
 
-@media(max-height:667px){
-
-    #copyLinkBtn{
-        position: absolute;
-        bottom: 40rem;
+@media(max-width:398px){
+    html{
+        font-size: 35%;
     }
 }
 
-@media(max-height:740px){
-     #copyLinkBtn{
-        position: absolute;
-        bottom: 57rem;
-     }
-}
-
-
-@media(max-height:600px){
-    #copyLinkBtn{
-       position: absolute;
-       bottom: 10rem;
-    }
-}
-
-  /* @media(min-height:731px){
+/* @media(max-height:1258px){
     @keyframes up{
         0%{
-            bottom:25rem;
+            bottom:37rem;
         }
         100%{
-            bottom: 36.9rem;
+            bottom:70rem
         }
     }
-} 
+    
+} */
 
-
-@media(min-height:925px)and(){
-    @keyframes up{
-        0%{
-            bottom:45rem;
-        }
-        100%{
-            bottom: 56rem;
-        }
-    }
-}
-
- */
