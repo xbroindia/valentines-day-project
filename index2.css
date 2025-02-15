@@ -189,6 +189,7 @@ body{
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 0.5rem black;
     cursor: pointer;
+    z-index: 10000;
 }
 
 #copyLinkBtn:hover{
