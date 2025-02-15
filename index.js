@@ -3,6 +3,32 @@ const heart = document.querySelector('.person1')
 const image = document.createElement('img')
 const sender_name = document.querySelector("#letter-label1-para")
 const reciver_name = document.querySelector("#letter-label2-para")
+const glitter_container = document.createElement('div')
+
+const main = document.querySelector(".main")
+
+let count = 0;
+
+
+
+glitter_container.classList.add("glitter-container")
+
+
+main.prepend(glitter_container)
+
+while(count <= 10){
+
+    let glitter = document.createElement('div')
+    glitter.classList.add("glitter")
+    
+    glitter_container.append(glitter)
+    count+=1
+}
+
+
+
+
+glitter_container.append()
 
 if(userdata){
     console.log(userdata)

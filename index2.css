@@ -196,6 +196,131 @@ body{
 }
 
 
+.glitter-container {
+    position: absolute;
+    width: 100%;
+    top:0;
+    height: 100vh;
+  }
+
+  .glitter {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 253);
+    border-radius: 50%;
+    animation: glitter-fall 6s infinite;
+    pointer-events: none;
+    z-index: 1000;
+    /* animation:change 7s  infinite; */
+  }
+
+  /* Falling glitter elements with random horizontal movement */
+  .glitter:nth-child(1) {
+    top: -25%;
+    left:20%;
+    animation-delay: 0s;
+    background-color: red;
+  }
+
+  .glitter:nth-child(2) {
+    top: -20%;
+    left:40%;
+    animation-delay: 2s;
+    background-color: blue;
+  }
+
+  .glitter:nth-child(3) {
+    top: -30%;
+    left:50%;
+    animation-delay: 1s;
+    background-color: rgb(251, 255, 0);
+  }
+
+  .glitter:nth-child(4) {
+    top: -40%;
+   left:60%;
+    animation-delay: 1.5s;
+    background-color: rgb(95, 250, 95);
+  }
+
+  .glitter:nth-child(5) {
+    top: -50%;
+    left:70%;
+    animation-delay: 0.5s;
+    background-color: rgb(95, 250, 242);
+  }
+
+  .glitter:nth-child(6) {
+    top: -28%;
+    left:80%;
+    animation-delay: 2.5s;
+    background-color: red;
+  }
+
+  .glitter:nth-child(7){
+      top: -15%;
+     right:5%;
+    animation-delay: 3s;
+    background-color: blue;
+  }
+
+  .glitter:nth-child(8){
+      top:-40%;
+      left:10%;
+      animation-delay: 3.5s;
+      background-color: rgb(213, 141, 255);
+  }
+
+  .glitter:nth-child(9){
+      top:-30%;
+      left:30%;
+      animation-delay: 3.5s;
+      background-color: rgb(251, 255, 0);
+  }
+
+
+
+  
+  @keyframes glitter-fall {
+    0% {
+      opacity: 1;
+      transform: translateY(30vh)
+    }
+     
+    20%{
+      background-color:darkviolet;
+  }
+
+  40%{
+      background-color: aquamarine;
+  }
+
+    50% {
+      opacity: 0.5;
+      transform: translateY(70vh) 
+    }
+
+    60%{
+      background-color: chocolate;
+  }
+
+  80%{
+      background-color: gold;
+  }
+
+    100% {
+      opacity: 0;
+      transform: translateY(150vh) ; 
+    }
+  }
+
+  @keyframes change{
+       0%{
+            
+       }
+  }
+
 
 
 @media(max-width:1024px){
